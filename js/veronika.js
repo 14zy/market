@@ -73,8 +73,13 @@ generateHTML = function (row) {
 }
 
 showAlert = function (id, showMessage) {
+    
     item = rows2[id - 1];
-    img = "img/detectors/" + "screenshot.jpg"; // item.screenshot;
+
+    if (!item.screenshot) {
+        item.screenshot = "screenshot.jpg";
+    }
+    img = "img/detectors/" + item.screenshot;
     // img = "img/detectors/" + "1.jpg";
     if (showMessage != false) {
         if (item.description) {
