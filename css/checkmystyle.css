@@ -1,0 +1,119 @@
+
+@font-face {
+    font-family: 'Cooper Black';
+    src: url('Cooper\ Black.otf') format('opentype'); 
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Cooper Otl';
+    src: url('Cooper Otl.ttf') format('opentype'); 
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Helvetica Hollow';
+    src: url('HelveticaBlkHollow.ttf') format('opentype'); 
+    font-weight: bold;
+    font-style: bold;
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+.special-badge {
+    font-family: "Cooper Black";
+}
+
+
+/* .body-mix {
+    background-color: rgb(251, 217, 205);
+} */
+
+.body-menu {
+    background-color: rgb(228, 225, 240);
+    
+}
+
+.title {
+    /* font-family: "Cooper Black"; */
+    /* color: rgb(201, 122, 177); */
+    font-size: 36px;
+}
+
+.titleMini {
+    font-family: "Cooper Black";
+    color: rgb(201, 122, 177);
+    font-size: 28px;
+}
+
+.titleMix {
+    font-family: "Cooper Black";
+    color: rgb(228, 52, 91);
+    font-size: 48px;
+}
+
+.titleNum {
+    font-family: "Helvetica Hollow";
+    color: rgb(228, 52, 91);
+    font-size: 48px;
+}
+
+.mix-desc {
+    color: rgb(251, 217, 205);
+    background-color: rgb(60, 59, 57);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.item-nav {
+    cursor: pointer;
+}
+
+
+.swal2-header {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    padding-top: 0!important;
+}
+
+
+.swal2-image {
+    margin: 0!important;
+    margin-bottom: 10px;
+}
+
+.price-pill {
+    border-radius: 0!important;
+    /* background-color: rgb(77, 89, 166)!important; */
+}
+
+
+.price-pill:active {
+        /* background-color: #A4D555!important; */
+        outline: none;
+        box-shadow: none;
+}
+
+.items, .topping, .sauce {
+    color: rgb(228, 52, 91);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.topping, .sauce {
+    height: 90px;
+}
+
+.selected {
+    color: rgb(77, 89, 166);
+}
+
+#btnOrder, #btnNext, #btnStart, #feedbackBtn {
+    background-color: rgb(77, 89, 166);
+    border-color: rgb(77, 89, 166);
+}
+}
