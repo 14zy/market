@@ -318,7 +318,7 @@ function runSwiper() {
                 },
                 // when window width is >= 640px
                 640: {
-                  slidesPerView: 7,
+                  slidesPerView: 5,
                   spaceBetween: 40
                 }
               }
@@ -326,25 +326,25 @@ function runSwiper() {
     }
 }
 
-customBowl = false;
+// customBowl = false;
 
-if ( customBowlCheck() ) {
+// if ( customBowlCheck() ) {
 
-    array = customBowlCheck()
+//     array = customBowlCheck()
     
-    item = {
-        id: "",
-        name: "свой боул",
-        category: "",
-        icon: "",
-        price: array.split("|")[0],
-        output: "",
-        description: array.split("|")[1]
-    }
+//     item = {
+//         id: "",
+//         name: "свой боул",
+//         category: "",
+//         icon: "",
+//         price: array.split("|")[0],
+//         output: "",
+//         description: array.split("|")[1]
+//     }
 
-    addToCart(item);
-    customBowl = item.description;
-}
+//     addToCart(item);
+//     customBowl = item.description;
+// }
 
 
 
