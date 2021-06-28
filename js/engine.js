@@ -92,7 +92,7 @@ showAlert = function (id, showMessage) {
             html: item.description,
             imageUrl: img,
             showCloseButton: true,
-            confirmButtonText: item.price + " ₽ в месяц",
+            confirmButtonText: "Подключить за " + item.price + " ₽ / мес",
             // confirmButtonColor: 'rgb(77, 89, 166)',
             // imageAlt: 'Miska Bowls'
             // backdrop: `
