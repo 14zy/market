@@ -18,27 +18,3 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
 
 
-  customBowlAdd = function(item, price) {
-    cart2 = localStorage.getItem("cart");
-
-    if (cart2) {
-      localStorage.setItem("cart", price + "|"+item);
-    } else {
-      localStorage.setItem("cart", price + "|"+item);
-    }
-    
-  };
-
-
-customBowlCheck = function() {
-  cart2 = localStorage.getItem("cart");
-
-  if (cart2) {
-    return cart2
-  }
-
-}
-
-removeCustomBowl = function() {
-  localStorage.clear();
-}

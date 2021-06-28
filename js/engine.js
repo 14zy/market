@@ -63,9 +63,8 @@ generateHTML = function (row) {
         return `
         <div class="swiper-slide">
             <img src="img/detectors/`+ row.icon + `" width="100%" class="rounded" onclick="showAlert(` + row.id + `)">
-            <span class="mt-2 badge bg-success rounded-pill " onclick="showAlert(` + row.id + `)">`+ row.price + ` ₽ / мес</span>
-            <br>
-            <span class=""><b>`+ row.name + `</b></span><br>
+            <span class="">`+ row.name + `</span><br>
+            <span class="small" onclick="showAlert(` + row.id + `)">`+ row.price + ` ₽ / мес</span>
         </div>`;
     } else {
         return "";
@@ -319,7 +318,7 @@ function runSwiper() {
                 },
                 // when window width is >= 640px
                 640: {
-                  slidesPerView: 6,
+                  slidesPerView: 7,
                   spaceBetween: 40
                 }
               }

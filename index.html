@@ -69,21 +69,29 @@
       </div> -->
     </div>
 
-    <div class="btn-group w-100 pt-2 pb-md-3 px-md-2" role="group" aria-label="Basic example">
+    <div class="btn-group w-100 pt-2 pb-md-3 px-md-4" role="group" aria-label="Basic example">
       <button type="button" class="btn btn-primary active">Магазин</button>
-      <a href="https://cp.openeva.ru/Cameras"  class="btn btn-primary">Контроль</a>
-      <button type="button" class="btn btn-primary">Новости
+      
+      <a href="https://cp.openeva.ru/Cameras"  class="btn btn-primary">Камеры</a>
+
+      <a href="https://cp.openeva.ru/Cameras"  class="btn btn-primary">События
         <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
           2
           <span class="visually-hidden">unread messages</span>
         </span>
-      </button>
-      <button type="button" class="btn btn-primary">Помощь</button>
+      </a>
+      
+      
+      
+      
+
+      <!-- <button type="button" class="btn btn-primary">Помощь</button> -->
     </div>
   </nav>
 
-
   <div class="container">
+
+    <hr>
   
     <div id="menu-block">
       <div class="row text-left">
@@ -92,24 +100,69 @@
 
           <br>
 
-          <!-- <span class="badge bg-primary">Primary</span>
-          <span class="badge bg-secondary">Secondary</span>
-          <span class="badge bg-success">Success</span>
-          <span class="badge bg-danger">Danger</span>
+           <div class="row">
+           <div class="col-2 ">
+            <br>
+            <h6> Категории</h6>
           
-          
-           -->
-           
-           
-          <span class="badge item-nav bg-dark">HoReCa</span>
-          <span class="badge item-nav bg-secondary">Авто</span>
-          <span class="badge item-nav bg-secondary">Безопасность</span>
-          <span class="badge item-nav bg-secondary">Маркетинг</span>
-          <span class="badge item-nav bg-secondary">Другое</span>
-          <span class="badge item-nav bg-secondary ">Устройства</span>
-          
-          
-            <p class="title pt-4">HoReCa</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">HoReCa</li>
+                <li class="list-group-item">Авто</li>
+                <li class="list-group-item">Безопасность</li>
+                <li class="list-group-item">Маркетинг</li>
+                <li class="list-group-item">Другое</li>
+                <li class="list-group-item">Устройства</li>
+              </ul>
+            
+           </div>
+
+           <div class="col-8">
+             
+
+            <p class="title">Популярные детекторы</p>
+            <div class="swiper-container pb-4">
+              
+             
+
+              
+              
+
+                <div class="swiper-wrapper" id="">
+
+                  <div class="card mx-2" style="width: 18rem;">
+                    <img src="img/detectors/1.jpg" class="card-img-top pull-right w-25" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Детектор толпы</h5>
+                      <p class="card-text">Получайте уведомления при первых признаках скопления людей в заданной области</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">До 4 видеопотоков</li>
+                      <li class="list-group-item">2800 ₽ / мес</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Узнать больше</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/detectors/2.jpg" class="card-img-top pull-right w-25" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Запрещенная зона</h5>
+                      <p class="card-text">Получайте уведомления при первых признаках скопления людей в заданной области</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">До 16 видеопотоков</li>
+                      <li class="list-group-item">1200 ₽ / мес</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Узнать больше</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <p class="title">HoReCa</p>
             <div class="swiper-container pb-4">
                 <div class="swiper-wrapper" id="HoReCa"></div>
             </div>
@@ -165,15 +218,20 @@
               </div>
             </div>
 
-            <br><br><br>
-            Бла Бла Бла Текст
-            <br><br><br>
-
-            
+           </div>
+           
+          </div>
           
+
+          <br><br><br>
+          Футер
+          <br><br><br>
+            
          </div>
       </div>
     </div>
+
+
 
     <div class="text-center text-muted invisible">
       <div class='card fixed-bottom' id="blockCart">
@@ -249,14 +307,15 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  
   <script src="js/etc.js?v5"></script>
 
   <script src="js/google-spreadsheets-db.min.js"></script>
-  <script src="js/veronika.js?v5"></script>
+  <script src="js/engine.js"></script>
 
-  <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
+  
 
-  <!-- <script src="js/bowl-mixer.js"></script> -->
+  
 </body>
 
 </html>
