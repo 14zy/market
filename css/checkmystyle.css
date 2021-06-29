@@ -34,6 +34,7 @@
 } */
 
 .body-menu {
+
     /* background-color: rgb(228, 225, 240); */
     
 }
@@ -116,4 +117,10 @@
     background-color: rgb(77, 89, 166);
     border-color: rgb(77, 89, 166);
 }
+
+
+.btn-openeva {
+    border-radius: 0 !important;
+    border-color: rgb(91, 201, 221) !important;
+    background-color: rgb(91, 201, 221) !important;
 }
