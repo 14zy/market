@@ -140,7 +140,6 @@ $("#cartClear").on("click", function () {
     $("#cartClear").hide();
     $("#totalOrderBlock").hide();
     
-    removeCustomBowl();
 });
 
 // deliveryOption = 0;
