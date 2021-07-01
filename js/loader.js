@@ -61,7 +61,7 @@ generateHTML = function (row) {
         
         return `
         <div class="swiper-slide">
-            <div class="card" style="width: 15rem; height: 330px" onclick="showAlert(` + row.id + `)">
+            <div class="card" style="width: 15rem; height: 350px" onclick="showAlert(` + row.id + `)">
                 <img src="img/detectors/`+row.icon+`" class="card-img-top pull-right mx-3 mt-3 w-25" alt="..." >
                 <div class="card-body" style="height: 200px">
                     <h5 class="card-title">`+row.name+`</h5>
