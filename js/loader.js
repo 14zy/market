@@ -58,12 +58,23 @@ db.getAll('Database!A1:L100', (err, tablRows) => {
 
 generateHTML = function (row) {
     if (row.hidden != "yes") {
+        
         return `
         <div class="swiper-slide">
-            <img src="img/detectors/`+ row.icon + `" width="100%" class="rounded" onclick="showAlert(` + row.id + `)">
-            <span class="">`+ row.name + `</span><br>
-            <span class="small" onclick="showAlert(` + row.id + `)">`+ row.price + ` ₽ / мес</span>
-        </div>`;
+            <div class="card" style="width: 15rem; height: 330px" onclick="showAlert(` + row.id + `)">
+                <img src="img/detectors/`+row.icon+`" class="card-img-top pull-right mx-3 mt-3 w-25" alt="..." >
+                <div class="card-body" style="height: 200px">
+                    <h5 class="card-title">`+row.name+`</h5>
+                    <p class="card-text">`+row.description+`</p>
+                </div>
+                
+                <div class="card-body" >
+                `+row.price+` ₽ / мес
+                <br>
+                    <a href="#" class="card-link">Купить лицензию</a>
+                </div>
+            </div>
+          </div>`
     } else {
         return "";
     }
@@ -87,10 +98,10 @@ showAlert = function (id, showMessage) {
     
         Swal.fire({
             title: item.name,
-            html: item.description,
+            html: item.description + "<br><br>"+item.price + " ₽ / мес",
             imageUrl: img,
             showCloseButton: true,
-            confirmButtonText: "Подключить за " + item.price + " ₽ / мес",
+            confirmButtonText: "Купить лицензию",
         }).then((result) => {
             if (result.value) {
                 addToCart(item);
@@ -290,20 +301,25 @@ function runSwiper() {
         const swiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
             loop: false,
-            slidesPerView: "4.5",
+            // slidesPerView: "4.5",
             spaceBetween: 10,
             grabCursor: true,
             breakpoints: {
-                // when window width is >= 320px
-                320: {
-                  slidesPerView: 2.5,
-                  spaceBetween: 20
-                },
-                // when window width is >= 640px
-                640: {
-                  slidesPerView: 5,
-                  spaceBetween: 40
-                }
+                 // when window width is >= 320px
+                 320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                  },
+                  // when window width is >= 480px
+                  480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                  },
+                  // when window width is >= 640px
+                  640: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                  }
               }
         });
     }
