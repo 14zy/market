@@ -119,14 +119,15 @@ addToCart = function (item) {
     cart.push(item);
     $("#totalOrder").html("");
     cart.forEach(element => {
-        str = element.name + " – " + element.price + " ₽<br>"
+        str = element.name + " – " + element.price + "₽<br>"
         $("#totalOrder").append(str);
         price = price + parseInt(element.price);
     });
     $("#totalSum").html(price)
     if (price > 0) {
-        $("#btnOrder").show();
+        $("#totalOrderBlock").show();
         $("#cartClear").show();
+        $("#btnOrder").show();
     }
     animateCSS('#blockCart', 'pulse');
 }
@@ -137,6 +138,8 @@ $("#cartClear").on("click", function () {
     $("#totalOrder").html("В корзине пусто");
     $("#btnOrder").hide();
     $("#cartClear").hide();
+    $("#totalOrderBlock").hide();
+    
     removeCustomBowl();
 });
 

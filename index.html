@@ -26,7 +26,7 @@
     </div>
     <div class="btn-group w-100 pt-3 pb-md-3 px-md-4" role="group">
       <a href="#"  class="btn btn-secondary active">Магазин</button>
-      <a href="https://cp.openeva.ru/Cameras" class="btn btn-secondary ">Мои Камеры</a>
+      <a href="https://cp.openeva.ru/Cameras" class="btn btn-secondary ">Мои камеры</a>
       <a href="#"  class="btn btn-secondary ">События
         <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
           2
@@ -174,47 +174,18 @@
 
 
 
-  <div class="text-center text-muted invisible">
-    <div class='card fixed-bottom' id="blockCart">
-      <!-- <div class="card-header">
-        <span id="cartClear" style='float: right; display: none' class="text-right">X</span>
-        <h6>Корзина</h6>
-      </div> -->
-      <div class="card-body d-xs-block d-sm-block d-md-block d-lg-none" id='message'>
-        В корзине пусто
-        <!-- <div class="row ">
-          <div class="col-3 p-0">
-            <button type="button" class="w-100 btn btn-sm btn-clear">Маркет</button>
-          </div>
-
-          <div class="col-3 p-0">
-            <button type="button" class="w-100 btn btn-sm btn-primary">
-              Камеры
-            </button>
-          </div>
-
-          <div class="col-3 p-0">
-            <button type="button" class=" w-100 btn btn-sm btn-primary">
-              Новости
-              
-            </button>
-          </div>
-
-          <div class="col-3 p-0">
-            <button type="button" class=" w-100 btn btn-sm btn-primary">
-            Контакты
-            
-            </button>
-          </div>
-
-        </div> -->
-
+  
+    <div class='card fixed-bottom m-4' style="width: 18rem; border-radius: 15px;"  id="blockCart">
+      
+      <div class="card-body d-xs-block d-sm-block d-md-block" id='message'>
+        <span id="cartClear" style='float: right; display: none; cursor: pointer' class="text-right">X</span>
+        <span id="totalOrder">В корзине пусто</span>
+        <span id="totalOrderBlock" style="display: none"> Итого: <span id="totalSum">0</span>₽ </span>
+        
         
       </div>
-      <!-- <div class="card-footer" id='sum'>
-          Итого: <span id="totalSum">0</span>₽
-      </div> -->
-      <!-- <a id="btnOrder" style="display:none" class="btn btn-lg btn-primary"><span id="totalSum">0</span> ₽ – Заказать</a>   -->
+      
+      <a id="btnOrder" style="display:none" class="btn btn-lg btn-primary">Оформить</a>  
     </div>
 
 
