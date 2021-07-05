@@ -5,8 +5,8 @@ const db = new GoogleSpreadsheetsDb(
 
 rows = {};
 
-db.getAll('Database!A1:L100', (err, tablRows) => {
-    rows = tablRows;
+db.getAll('Database!A1:L100', (err, tableRows) => {
+    rows = tableRows;
 
     elHTML_horeca = "";
     elHTML_auto = "";
@@ -61,7 +61,7 @@ generateHTML = function (row) {
         
         return `
         <div class="swiper-slide">
-            <div class="card" style="width: 15rem; height: 350px" onclick="showAlert(` + row.id + `)">
+            <div class="card " style="width: 15rem; height: 350px" onclick="showAlert(` + row.id + `)">
                 <img src="img/detectors/`+row.icon+`" class="card-img-top pull-right mx-3 mt-3 w-25" alt="..." >
                 <div class="card-body" style="height: 200px">
                     <h5 class="card-title">`+row.name+`</h5>
@@ -71,7 +71,7 @@ generateHTML = function (row) {
                 <div class="card-body" >
                 `+row.price+` ₽ / мес
                 <br>
-                    <a href="#" class="card-link">Купить лицензию</a>
+                    <a href="#" class="card-link">Добавить в корзину</a>
                 </div>
             </div>
           </div>`
@@ -101,7 +101,7 @@ showAlert = function (id, showMessage) {
             html: item.description + "<br><br>"+item.price + " ₽ / мес",
             imageUrl: img,
             showCloseButton: true,
-            confirmButtonText: "Купить лицензию",
+            confirmButtonText: "Добавить в корзину",
         }).then((result) => {
             if (result.value) {
                 addToCart(item);
